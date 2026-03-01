@@ -10,10 +10,10 @@ const config: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: '*.instawp.xyz',
+        hostname: 'https://chocolate-frog-538600.hostingersite.com',
         pathname: '/wp-content/uploads/**',
       },
-    ],
+    ]
     // Allow images from local/private IPs during development
     dangerouslyAllowSVG: true,
     unoptimized: process.env.NODE_ENV === 'development',

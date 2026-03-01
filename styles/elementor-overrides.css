@@ -1,0 +1,32 @@
+/* styles/elementor-overrides.css */
+/*
+  Scopes Elementor styles to prevent them leaking
+  into our header, footer, or navigation.
+*/
+
+/* Let Elementor sections go full width */
+.elementor-page .elementor-section,
+.elementor-page .e-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Respect our CSS font variables */
+.elementor-page {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+}
+
+/* Fix Elementor's default link color */
+.elementor-page a {
+  color: var(--color-primary);
+}
+
+.elementor-page a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Prevent Elementor adding extra body padding */
+.elementor-page .elementor {
+  width: 100%;
+}

@@ -10,22 +10,10 @@ const config: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'https://chocolate-frog-538600.hostingersite.com/',
+        hostname: 'chocolate-frog-538600.hostingersite.com',
         pathname: '/wp-content/uploads/**',
       },
     ],
-  },
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-        ],
-      },
-    ]
   },
 }
 
